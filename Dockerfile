@@ -11,5 +11,6 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 COPY *.py ./
+COPY examples ./examples
 
 ENTRYPOINT /bin/bash

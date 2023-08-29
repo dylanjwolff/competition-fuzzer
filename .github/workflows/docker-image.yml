@@ -24,4 +24,4 @@ jobs:
       with:
         image: student-fuzzer:latest
         run: |
-          echo "hello"
+          cp examples/0/bug.py .; timeout 10s python student_fuzzer.py; test $? -eq 219
