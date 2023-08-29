@@ -6,7 +6,7 @@ def entrypoint(s):
     global i
     i += 1
     if i > 100:
-        exit(219)
+        exit(21)
 
 if __name__ == "__main__":
   for p in range(0, 110):
