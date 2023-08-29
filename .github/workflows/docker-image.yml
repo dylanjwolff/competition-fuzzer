@@ -18,6 +18,7 @@ jobs:
         cache-from: type=gha
         cache-to: type=gha,mode=max
         tags: student-fuzzer:latest
+        push: false
         load: true
     - uses: addnab/docker-run-action@v3
       with:
