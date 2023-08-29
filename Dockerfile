@@ -1,4 +1,4 @@
-FROM python:bookworm-slim
+FROM python:3.10-slim-bookworm
 
 RUN apt update -y
 RUN apt install -y git pkg-config libcairo-dev gcc
