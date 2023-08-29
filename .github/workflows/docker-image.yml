@@ -17,3 +17,9 @@ jobs:
         context: .
         cache-from: type=gha
         cache-to: type=gha,mode=max
+        tags: student-fuzzer:latest
+    - uses: addnab/docker-run-action@v3
+      with:
+        image: student-fuzzer:latest
+        run: |
+          echo "hello"
