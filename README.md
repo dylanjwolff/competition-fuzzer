@@ -17,7 +17,7 @@ This `bug.py` file should have two functions: an `entrypoint` that is fuzzed by 
 To execute the fuzzer on the bug in `bug.py`, just run:
 
 ```
-python student-fuzzer.py
+python student_fuzzer.py
 ```
 
 Several example bugs are included in the `examples` directory.
