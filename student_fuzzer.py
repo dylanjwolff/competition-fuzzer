@@ -5,6 +5,7 @@ from fuzzingbook import MutationFuzzer as mf
 import traceback
 import numpy as np
 import time
+import random
 
 from bug import entrypoint
 from bug import get_initial_corpus
@@ -60,6 +61,8 @@ from bug import get_initial_corpus
 # benchmarking run. The framework will track whether or not the bug was
 # found by your fuzzer -- no need to keep track of crashing inputs
 if __name__ == "__main__":
+    random.seed() # For the competition, `seed()` with no arguments uses the system time to ensure each run has a fresh random seed
+
     seed_inputs = get_initial_corpus()
     fast_schedule = gbf.AFLFastSchedule(5)
     line_runner = mf.FunctionCoverageRunner(entrypoint)
