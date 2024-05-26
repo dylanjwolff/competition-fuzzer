@@ -95,9 +95,8 @@ You will still need to find a way to leverage dataflow analysis to cover additio
 
 **Concolic Execution (White Box Fuzzing / Dynamic Symbolic Execution)**
 
-Email the TAs if you want to do a project on symbolic or concolic execution.
-Some restrictions apply.
+Improve the Fuzzing Book white box fuzzer!
 
 **Hybrid Fuzzing**
 
-Combine the fuzzing book implementations of Concolic and Greybox fuzzers.
+Combine the fuzzing book implementations of Concolic and Greybox fuzzers!
