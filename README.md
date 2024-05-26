@@ -53,11 +53,7 @@ The detection method *will* be different in the competition, so don't search the
 
 ## Implementation Ideas
 Below are some sample ideas for fuzzer implementations (not exhaustive!).
-Note that your fuzzer need not cover all design choices explored in a paper; you may choose a single contribution from a paper to implement in isolation.
-It is sufficient to implement and examine only *one* concept or contribution to receive full marks in **Part 1**.
-For the competition in **Part 2**, you may wish to make additional improvements to your fuzzer. 
-If you have ideas for a novel contribution or one not listed here, please reach out to the TAs for a consultation.
-Entries marked with a '&dagger;' are options the TAs believe will be more straightforward.
+Entries marked with a '&dagger;' are options we believe will be more straightforward to implement.
 
 
 **Coverage Feedback**
