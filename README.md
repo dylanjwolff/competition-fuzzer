@@ -59,7 +59,7 @@ Entries marked with a '&dagger;' are options we believe will be more straightfor
 **Coverage Feedback**
 
 - [Be Sensitive and Collaborative: Analyzing Impact of Coverage Metrics in Greybox Fuzzing](https://www.usenix.org/system/files/raid2019-wang-jinghan.pdf)
-(Many good options in this paper! Only need to pick one) &dagger;
+(Many good options in this paper!) &dagger;
 
 **Mutation Strategy**
 
