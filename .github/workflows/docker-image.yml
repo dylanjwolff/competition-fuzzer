@@ -17,11 +17,11 @@ jobs:
         context: .
         cache-from: type=gha
         cache-to: type=gha,mode=max
-        tags: student-fuzzer:latest
+        tags: competition-fuzzer:latest
         push: false
         load: true
     - uses: addnab/docker-run-action@v3
       with:
-        image: student-fuzzer:latest
+        image: competition-fuzzer:latest
         run: |
-          cp examples/0/bug.py .; timeout 10s python student_fuzzer.py; test $? -eq 219
+          cp examples/0/bug.py .; timeout 10s python fuzzer.py; test $? -eq 219
