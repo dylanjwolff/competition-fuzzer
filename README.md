@@ -88,8 +88,8 @@ Entries marked with a '&dagger;' are options we believe will be more straightfor
 
 *Propagation-Based:*
 
-The Fuzzing Book [gives an intro and some scaffolding code](https://www.fuzzingbook.org/html/InformationFlow.html) for dataflow analysis, but we are not interested in command injection specifically for this assignment.
-You will still need to find a way to leverage dataflow analysis to cover additional conditional branches within the benchmark programs.
+The Fuzzing Book [gives an intro and some scaffolding code](https://www.fuzzingbook.org/html/InformationFlow.html) for dataflow analysis, but we are not interested in command injection specifically for the competition micro-benchmarks.
+You would instead need to find a way to leverage dataflow analysis to cover additional conditional branches within the benchmark programs.
 
 - [DatAFLow: Toward a Data-Flow-Guided Fuzzer](https://dl.acm.org/doi/pdf/10.1145/3587156)
 
