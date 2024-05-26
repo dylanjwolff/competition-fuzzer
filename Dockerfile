@@ -3,9 +3,9 @@ FROM python:3.10-slim-bookworm
 RUN apt update -y
 RUN apt install -y git pkg-config libcairo-dev gcc
 
-RUN useradd student
+RUN useradd participant
 
-WORKDIR /home/student
+WORKDIR /home/participant
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
