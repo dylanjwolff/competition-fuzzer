@@ -1,4 +1,4 @@
-# Participant Fuzzer
+# Competition Participant Fuzzer
 Template repository for the Fuzzing Competition
 
 ## CI Job
