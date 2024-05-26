@@ -50,3 +50,58 @@ The detection method *will* be different in the competition, so don't search the
 4. Make changes to your fuzzer (include *all* new files/dependencies in the Dockerfile) -- **DO NOT** change the name of `fuzzer.py`
 5. Check that the CI job passes for your changes
 6. Cut a `tar.gz` [release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) on Github to have it included in the next benchmarking run
+
+## Implementation Ideas
+Below are some sample ideas for fuzzer implementations (not exhaustive!).
+Note that your fuzzer need not cover all design choices explored in a paper; you may choose a single contribution from a paper to implement in isolation.
+It is sufficient to implement and examine only *one* concept or contribution to receive full marks in **Part 1**.
+For the competition in **Part 2**, you may wish to make additional improvements to your fuzzer. 
+If you have ideas for a novel contribution or one not listed here, please reach out to the TAs for a consultation.
+Entries marked with a '&dagger;' are options the TAs believe will be more straightforward.
+
+
+**Coverage Feedback**
+
+- [Be Sensitive and Collaborative: Analyzing Impact of Coverage Metrics in Greybox Fuzzing](https://www.usenix.org/system/files/raid2019-wang-jinghan.pdf)
+(Many good options in this paper! Only need to pick one) &dagger;
+
+**Mutation Strategy**
+
+- [MOPT: Optimize Mutation Scheduling for Fuzzers](https://www.usenix.org/system/files/sec19-lyu.pdf) &dagger;
+- [FairFuzz: A Targeted Mutation Strategy for Increasing Greybox Fuzz Testing Coverage](https://dl.acm.org/doi/pdf/10.1145/3238147.3238176)
+
+**Comparison Instrumentation and Branch Distance**
+
+<!--- - [Harvey: A Greybox Fuzzer for Smart Contracts](https://mariachris.github.io/Pubs/FSE-2020-Harvey.pdf) &dagger;
+(Sections 4.2 and 4.3) -->
+
+- [REDQUEEN: Fuzzing with Input-to-State Correspondence](https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04A-2_Aschermann_paper.pdf) &dagger;
+- [Laf-Intel: Circumventing Fuzzing Roadblocks with Compiler Transformations](https://lafintel.wordpress.com/) &dagger;
+
+**Gradient Descent Fuzzing**
+
+- [Angora: Efficient Fuzzing by Principled Search](https://web.cs.ucdavis.edu/~hchen/paper/chen2018angora.pdf) (Section 3.4)
+<!--- - [JIGSAW: Efficient and Scalable Path Constraints Fuzzing](https://www.cs.ucr.edu/~csong/oakland22-jigsaw.pdf) (Section 4.D) -->
+
+**Taint Analysis or Dataflow Guided Fuzzing**
+
+*Inference-Based:*
+
+- [GREYONE: Data Flow Sensitive Fuzzing](https://www.usenix.org/conference/usenixsecurity20/presentation/gan)
+<!--- - [PATA: Fuzzing with Path Aware Taint Analysis (S\&P 2022)](http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/sp22.pdf) (more complex) -->
+
+*Propagation-Based:*
+
+The Fuzzing Book [gives an intro and some scaffolding code](https://www.fuzzingbook.org/html/InformationFlow.html) for dataflow analysis, but we are not interested in command injection specifically for this assignment.
+You will still need to find a way to leverage dataflow analysis to cover additional conditional branches within the benchmark programs.
+
+- [DatAFLow: Toward a Data-Flow-Guided Fuzzer](https://dl.acm.org/doi/pdf/10.1145/3587156)
+
+**Concolic Execution (White Box Fuzzing / Dynamic Symbolic Execution)**
+
+Email the TAs if you want to do a project on symbolic or concolic execution.
+Some restrictions apply.
+
+**Hybrid Fuzzing**
+
+Combine the fuzzing book implementations of Concolic and Greybox fuzzers.
