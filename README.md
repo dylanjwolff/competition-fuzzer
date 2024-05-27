@@ -1,6 +1,14 @@
 # Competition Participant Fuzzer
 Template repository for the Fuzzing Competition
 
+## Competition Entry Instructions
+1. Fork this template repo (keep it [private](https://gist.github.com/0xjac/85097472043b697ab57ba1b1c7530274) to avoid integrity disputes)
+2. Give `dylanjwolff` access to your Github repository
+3. Fill out the [Google Form](https://docs.google.com/forms/d/1WoiEGgFWDUs9WLSmpt-36C0HzQNYACoJds4QrDm8yDA/viewform)
+4. Make changes to your fuzzer (include *all* new files/dependencies in the Dockerfile) -- **DO NOT** change the name of `fuzzer.py`
+5. Check that the CI job passes for your changes
+6. Cut a `tar.gz` [release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) on Github to have it included in the next [benchmarking run](https://nus-fuzzing-hackathon-2024.github.io/)
+
 ### Competition Leaderboard and Scoring:
 https://nus-fuzzing-hackathon-2024.github.io/
 
@@ -45,14 +53,6 @@ python fuzzer.py
 Whether or not the bug has been triggered will be detected by the competition infrastructure; no need to implement a special exception handler or detection mechanism yourself.
 In these examples, finding the bug is indicated by the fuzzer exiting with a particular exit code (219).
 The detection method *will* be different in the competition, so don't search the program for a particular exit code etc. to find the bug location.
-
-## Competition Compatability Summary
-1. Fork this template repo (keep it [private](https://gist.github.com/0xjac/85097472043b697ab57ba1b1c7530274) to avoid integrity disputes)
-2. Give `dylanjwolff` access to your Github repository
-3. Fill out the [Google Form](https://docs.google.com/forms/d/1WoiEGgFWDUs9WLSmpt-36C0HzQNYACoJds4QrDm8yDA/viewform)
-4. Make changes to your fuzzer (include *all* new files/dependencies in the Dockerfile) -- **DO NOT** change the name of `fuzzer.py`
-5. Check that the CI job passes for your changes
-6. Cut a `tar.gz` [release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) on Github to have it included in the next [benchmarking run](https://nus-fuzzing-hackathon-2024.github.io/)
 
 ## Implementation Ideas
 Below are some sample ideas for fuzzer implementations (not exhaustive!).
