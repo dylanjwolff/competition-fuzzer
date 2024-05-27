@@ -1,6 +1,9 @@
 # Competition Participant Fuzzer
 Template repository for the Fuzzing Competition
 
+### Competition Leaderboard and Scoring:
+https://nus-fuzzing-hackathon-2024.github.io/
+
 ## CI Job
 
 Please make sure to enable the CI job to check that your fuzzer is working properly:
@@ -49,7 +52,7 @@ The detection method *will* be different in the competition, so don't search the
 3. Fill out the [Google Form](https://docs.google.com/forms/d/1WoiEGgFWDUs9WLSmpt-36C0HzQNYACoJds4QrDm8yDA/viewform)
 4. Make changes to your fuzzer (include *all* new files/dependencies in the Dockerfile) -- **DO NOT** change the name of `fuzzer.py`
 5. Check that the CI job passes for your changes
-6. Cut a `tar.gz` [release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) on Github to have it included in the next benchmarking run
+6. Cut a `tar.gz` [release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) on Github to have it included in the next [benchmarking run](https://nus-fuzzing-hackathon-2024.github.io/)
 
 ## Implementation Ideas
 Below are some sample ideas for fuzzer implementations (not exhaustive!).
