@@ -3,7 +3,7 @@ Template repository for the Fuzzing Competition
 
 ## Competition Entry Instructions
 1. Fork this template repo (keep it [private](https://gist.github.com/0xjac/85097472043b697ab57ba1b1c7530274) to avoid integrity disputes)
-2. Give `dylanjwolff` access to your Github repository
+2. Give [`dylanjwolff`](https://github.com/dylanjwolff) access to your Github repository
 3. Fill out the [Google Form](https://docs.google.com/forms/d/1WoiEGgFWDUs9WLSmpt-36C0HzQNYACoJds4QrDm8yDA/viewform)
 4. Make changes to your fuzzer (include *all* new files/dependencies in the Dockerfile) -- **DO NOT** change the name of `fuzzer.py`
 5. Check that the CI job passes for your changes
