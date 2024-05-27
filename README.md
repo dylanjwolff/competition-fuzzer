@@ -42,11 +42,11 @@ The fuzzer expects a file named `bug.py` to be *in the same directory as the fuz
 The `bug.py` file will have two functions: an `entrypoint` that is fuzzed by the fuzzer and `get_initial_corpus` function which returns a list of initial inputs for the fuzzer.
 Several example bugs are included in the `examples` directory.
 
-To run the fuzzer on an example bug, copy e.g. `examples/0/bug.py` to the base directory of this repository before running the fuzzer with the command above.
+To run the fuzzer on an example bug, copy e.g. `examples/1/bug.py` to the base directory of this repository before running the fuzzer with the command above.
 I.e.:
 
 ```
-cp examples/0/bug.py .
+cp examples/1/bug.py .
 python fuzzer.py
 ```
 

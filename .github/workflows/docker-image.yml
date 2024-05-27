@@ -24,4 +24,4 @@ jobs:
       with:
         image: competition-fuzzer:latest
         run: |
-          cp examples/0/bug.py .; timeout 10s python fuzzer.py; test $? -eq 219
+          cp examples/1/bug.py .; timeout 10s python fuzzer.py; test $? -eq 219
