@@ -1,5 +1,5 @@
 seminar_time = "SUMMER"
-seminar_type = "SCHOOL"
+seminar_type = "SCHOSU"
 
 
 def get_initial_corpus():
